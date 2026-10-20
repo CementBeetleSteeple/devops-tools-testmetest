@@ -1,0 +1,10 @@
+name: Infrastructure
+on:
+  push:
+    branches: [main]
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'infra apply'
